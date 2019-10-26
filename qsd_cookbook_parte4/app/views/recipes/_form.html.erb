@@ -1,0 +1,14 @@
+<%= form_for @recipe do |f| %>
+    <div class="input-group">
+        <%= f.text_field :title, class: "form-control",   placeholder: "Título" %>
+        <%= f.text_field :recipe_type, class: "form-control", placeholder: "Tipo da Receita" %>
+        <%= f.text_field :cuisine, class: "form-control", placeholder: "Cozinha" %>
+        <%= f.text_field :difficulty, class: "form-control", placeholder: "Dificuldade" %>
+        <%= f.text_field :cook_time, class: "form-control", placeholder: "Tempo de Preparo" %>
+        <%= f.text_field :ingredients, class: "form-control", placeholder: "Ingredientes" %>
+        <%= f.text_field :cook_method, class: "form-control", placeholder: "Como Preparar" %>
+         <span class="input-group-btn">
+         <%= f.submit "Enviar", class: "btn btn-success" %>
+         </span>
+       </div>
+<% end -%>
